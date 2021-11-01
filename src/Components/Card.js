@@ -1,6 +1,7 @@
 
 function Card({ children }) {
 
+  // note:
   return (
     <div className="card">
       {children}
