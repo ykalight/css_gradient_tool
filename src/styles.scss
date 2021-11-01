@@ -1,0 +1,101 @@
+.cardWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    border: solid 0px #ccc;
+    width: 600px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    &, .glowWrapper{
+        border-radius: 18px;
+    }
+}
+
+.glowWrapper{
+    /* permanent */
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(256, 256, 256, 1);
+}
+
+.glow {
+    position: absolute
+}
+
+#glowControl{
+    display: flex;
+    justify-content:space-evenly;
+    width: 90vw;
+    label{font-size: .8em; margin: 0 8px}
+    color: #fff;
+
+    .col{width: 30%}
+    .row{
+        margin: 20px;
+        span{font-size: .8em;}
+    }
+}
+
+
+// Sample pre-defined
+.glow1 {
+    transform-origin: top right;
+    background-image: linear-gradient(to left, #6c22bd, #8b25bb, #a52bb9, #bc34b7, #d040b5, #e645a5, #f55195, #ff6188, #ff796e, #ff965b, #f5b255, #e1cd60);
+    width: 330px;
+    height: 200px;
+    filter: blur(46px);
+    opacity: 0.69;
+    transform: skewY(-8deg) translate(10%, -70%);
+    top: 0;
+    right: 0; 
+    border-radius: 55%;
+}
+
+.glow2 {
+    transform-origin: top right;
+    background-image: linear-gradient(to left, #5239d0, #3e4dd8, #285ddd, #0f6bdf, #0078e0, #0087e5, #0095e8, #00a2ea, #00b5ec, #00c5df, #00d3c6, #0edda4);
+    width: 500px;
+    height: 90px;
+    filter: blur(32px);
+    opacity: 0.69;
+    transform: skewY(-7deg) translate(60%, 50%);
+    top: 0;
+    right:0; 
+    border-radius: 50px;
+}
+
+.glow3 {
+    transform-origin: top right;
+    background-image: linear-gradient(to right top, #6c22bd, #8b25bb, #a52bb9, #bc34b7, #d040b5, #e645a5, #f55195, #ff6188, #ff796e, #ff965b, #f5b255, #e1cd60);
+    width: 550px;
+    height: 200px;
+    filter: blur(46px);
+    opacity: 0.69;
+    transform: skewY(-12deg) translate(50%, 50%);
+    top: 0;
+    right: 0; 
+    border-radius: 0;
+}
+
+.glow1-sharp {
+    transform-origin: top right;
+    background-image: linear-gradient(to left, #6c22bd, #8b25bb, #a52bb9, #bc34b7, #d040b5, #e645a5, #f55195, #ff6188, #ff796e, #ff965b, #f5b255, #e1cd60);
+    width: 290px;
+    height: 160px;
+    filter: blur(1px);
+    opacity: 0.2;
+    transform: skewY(-5deg) translate(30%, -60%);
+    top: 0;
+    right: 0; 
+    border-radius: 50%;
+}
