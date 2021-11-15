@@ -10,8 +10,8 @@ const { Handle } = Slider;
 function UsingImg() {
     const [glowImg, setGlowImg] = useState()
     const [bgsize, setBgsize] = useState(80)
-    const [posX, setPosX] = useState(340)
-    const [posY, setPosY] = useState(-160)
+    const [posX, setPosX] = useState(350)
+    const [posY, setPosY] = useState(80)
     const [opacity, setOpacity] = useState(100)
     const [swatch, setSwatch] = useState()
     const [glowstyle, setGlowstyle] = useState({})
@@ -40,7 +40,7 @@ function UsingImg() {
                 height: `100%`,
                 opacity: `${opacity}`,
                 backgroundSize: `${bgsize}%`,
-                backgroundPosition: `${posX}px ${posY}px`,
+                backgroundPosition: `${posX}% ${posY}%`,
                 backgroundImage: `url(http://products.alight.com/design/ads/assets/glow/${glowImg})`
             }
         )
@@ -82,13 +82,13 @@ function UsingImg() {
                     </div>
 
                     <div className="row">
-                        <label>X-position: {posX}px</label>
-                        <Slider min={-200} max={400} defaultValue={posX} handle={posXHandle} />
+                        <label>X-position: {posX}%</label>
+                        <Slider min={-240} max={400} defaultValue={posX} handle={posXHandle} />
                     </div>
 
                     <div className="row">
-                        <label>Y-position: {posY}px</label>
-                        <Slider min={-200} max={50} defaultValue={posY} handle={posYHandle} />
+                        <label>Y-position: {posY}%</label>
+                        <Slider min={0} max={100} defaultValue={posY} handle={posYHandle} />
                     </div>
 
                     <div className="row">
